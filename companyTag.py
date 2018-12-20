@@ -60,7 +60,7 @@ def correction_strg(strg,K):
                         sum_diff+=q
                 diff.append(sum_diff)
                         
-            return (diff,costArr,sub_lists,w)        
+            return (diff,costArr,sub_lists)        
     else:
         print ('Unequal Partitions')
         return
