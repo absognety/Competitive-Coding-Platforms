@@ -1,6 +1,7 @@
 #  Change a Company Tag using algorithms #
 
 print (
+       
    """
    There is a Company with a Tag comment (string) that when we divide the 
    comment into equal sub strings - All are supposed to be equal
@@ -23,7 +24,8 @@ print (
                             The cost is equal to a->b + b->a i.e 1+1 = 2
                             result : aab | aab | aab (All are equal)
                             
-   """)
+   """
+   )
 
 import string
 import numpy as np
