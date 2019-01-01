@@ -26,3 +26,27 @@ class Stack():
     
     def size(self):
         return (self.top+1)
+    
+    def get_stack(self):
+        return (self._seq)
+
+if __name__ == '__main__':
+    stack1 = Stack([3,9,4,2,0,-3,65,72,1])
+    stack1.push(23)
+    stack1.pop()
+    stack1.pop()
+    print (stack1.topElement())
+    print (stack1.size())
+    print (stack1.get_stack())
+    stack1.push(45)
+    print (stack1.get_stack())
+    stack1.pop()
+    stack1.pop()
+    stack1.pop()
+    stack1.pop()
+    stack1.push(100)
+    stack1.push(283)
+    stack1.push(136)
+    print (stack1.get_stack())
+    
+    
