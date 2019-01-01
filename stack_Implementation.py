@@ -2,7 +2,7 @@ class Stack():
     
     def __init__(self,sequence):
         
-        self._seq = sequence
+        self._seq = list(sequence)
         self._length = len(sequence)
         self.top=len(sequence)-1
         
@@ -48,5 +48,3 @@ if __name__ == '__main__':
     stack1.push(283)
     stack1.push(136)
     print (stack1.get_stack())
-    
-    
