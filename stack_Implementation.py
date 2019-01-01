@@ -8,7 +8,7 @@ class Stack():
         
     def push(self,X):
         if (self.top==self._length-1):
-            print ('Stach Overflow Condition')
+            print ('Stack Overflow Condition')
         else:
             self._seq.append('')
             self.top+=1
