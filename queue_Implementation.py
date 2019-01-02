@@ -30,7 +30,7 @@ class Queue():
         return (self.rear)
     
     def get_size(self):
-        return (self.rear-self.front)
+        return (self.rear-self.front+1)
     
     def get_queue(self):
         return (self._seq)
