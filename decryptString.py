@@ -15,6 +15,11 @@ print (encrypted_string('vikaschitturi'))
 print (encrypted_string('padmachitturi'))
 print (encrypted_string('hackerrank'))
 print (encrypted_string('hackerearth'))
+print (encrypted_string('codechef'))
+print (encrypted_string('IamVikas'))
+print (encrypted_string('HelloHowareyou'))
+print (encrypted_string('whatareyoudoing'))
+
 
 
 
@@ -43,3 +48,7 @@ print(decrypted_string('iuthskviacitr'))
 print(decrypted_string('iuthadpamcitr'))
 print(decrypted_string('nrechakrak'))
 print(decrypted_string('hreechakrat'))
+print(decrypted_string(encrypted_string('IamVikas')))
+print(decrypted_string(encrypted_string('HelloHowareyou')))
+print(decrypted_string(encrypted_string('whatareyoudoing')))
+
