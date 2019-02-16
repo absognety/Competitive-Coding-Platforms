@@ -13,3 +13,4 @@ for k in range(n-1):
             Array[m+1]=temp
         m+=1
     k+=1
+##Time complexity = O(n**2)
