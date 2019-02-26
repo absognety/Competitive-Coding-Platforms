@@ -6,4 +6,5 @@ def rotate(array,m):
     rotated_arr = array[m:] + cutoff_arr
     return (rotated_arr)
 
-print (rotate(arr,d))
+if __name__ == '__main__':
+    print (rotate(arr,d))
