@@ -41,7 +41,7 @@ class Solution:
                 maximumLen = max(maxArrayLens)
                 if maxArrayLens.count(maximumLen) == 1:
                     len_ind = maxArrayLens.index(maximumLen)
-                    return (filtered_Arrays[len_ind])
+                    return (filtered_Arrays[inds[len_ind]])
         else:
             print ()
             
