@@ -1,11 +1,11 @@
-### count of Zeros in a matrix #####
-
-def countZeros(matrix,n):
-    totalCount = 0
-    for e in range(n):
-        totalCount += matrix[e].count(0)
-    return (totalCount)
+def sortedMatrix(matrix,n):
+    row = matrix[0]
+    for r in matrix[1:]:
+        row = row + r
+    sorted_matrix = sorted(row)
+    return (sorted_matrix)
     
+
 if __name__ == '__main__':
     T = int(input())
     for I in range(T):
@@ -17,4 +17,4 @@ if __name__ == '__main__':
             for j in range(n):
                 matrix[i][j] = arr[k]
                 k += 1
-        print (countZeros(matrix,n))
+        print (sortedMatrix(matrix,n))
