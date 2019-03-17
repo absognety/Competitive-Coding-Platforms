@@ -17,4 +17,4 @@ if __name__ == '__main__':
             for j in range(n):
                 matrix[i][j] = arr[k]
                 k += 1
-        print (sortedMatrix(matrix,n))
+        print (' '.join(str(i) for i in sortedMatrix(matrix,n)))
