@@ -5,9 +5,10 @@ def transposeMatrix(matrix,n):
     c = 0
     for col in range(numCols):
         for row in range(numRows):
-            result += '' + str(matrix[row][c])
+            result += ' ' + str(matrix[row][c])
         c += 1
-    return (' '.join(list(result)))
+    result = result[1:]
+    return (' '.join(result.split(' ')))
     
 if __name__ == '__main__':
     T = int(input())
