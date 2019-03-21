@@ -1,0 +1,12 @@
+employee,month_year,salary,city
+Ravi,Jan_2017,45000,Hyderabad
+John,Aug_2017,67000,Hyderabad
+Jennifer,Dec_2016,80000,Bangalore
+James,Jan_2018,80000,Hyderabad
+cranston,Mar_2018,73000,Bangalore
+bryan,June_2018,21000,Bangalore
+Catherine,Nov_2018,35000,Bangalore
+Adam,May_2018,100000,Bangalore
+Alex,Oct_2017,81000,Hyderabad
+Kinston,July_2017,56000,Hyderabad
+Morrison,Feb_2017,80000,Hyderabad
