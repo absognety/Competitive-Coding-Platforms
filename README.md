@@ -11,7 +11,7 @@
 
 
 ### Links to Resources:
-1. [GeeksForGeeks] (https://practice.geeksforgeeks.org/)
-2. [HackerEarth] (https://www.hackerearth.com/challenges/)
-3. [HackerRank] (https://www.hackerrank.com/interview/interview-preparation-kit)
-4. [InterviewBit] (https://www.interviewbit.com/practice/)
+1. [GeeksForGeeks](https://practice.geeksforgeeks.org/)
+2. [HackerEarth](https://www.hackerearth.com/challenges/)
+3. [HackerRank](https://www.hackerrank.com/interview/interview-preparation-kit)
+4. [InterviewBit](https://www.interviewbit.com/practice/)
