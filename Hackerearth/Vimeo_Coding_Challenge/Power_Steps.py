@@ -32,12 +32,12 @@ def Solution (arr,n):
     # Write your code here
     N = arr[0]
     d1,d2 = min(arr[1],arr[2]),max(arr[1],arr[2])
-    if str(math.log(d2-d1,3)).split('.')[1] == '0':
+    if str(math.log(d2-d1,3)).split('.')[1] == '0' and str(math.log(d2-d1,3)).split('.')[0] != '0':
         return (int(math.log(d2-d1,3)))
     else:
         reqMediators = []
         for x in range(d1+1,d2):
-            if (str(math.log(x-d1,3)).split('.')[1]=='0') & (str(math.log(d2-x,3)).split('.')[1]=='0'):
+            if (str(math.log(x-d1,3)).split('.')[1]=='0' & str(math.log(x-d1,3)).split('.')[0]!='0') & (str(math.log(d2-x,3)).split('.')[1]=='0' & str(math.log(d2-x,3)).split('.')[0]!='0'):
                 reqMediators.append(x)
         if reqMediators:
             allTimes = []
