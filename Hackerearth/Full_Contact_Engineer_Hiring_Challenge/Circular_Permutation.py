@@ -30,4 +30,8 @@ def printPermutation(N,A):
     
 if __name__ == '__main__':
     N,A = list(map(int,input().strip().split()))
-    print (printPermutation(N,A))
+    ans = printPermutation(N,A)
+    print (ans)
+    for i in ans:
+        perm = [int(a,2) for a in i]
+        print (perm)
