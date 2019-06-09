@@ -28,3 +28,10 @@ print (dfs_recursive(graph,'b',visited_array=[],rs=[]))
 print (dfs_recursive(graph,'c',visited_array=[],rs=[]))
 print (dfs_recursive(graph,'d',visited_array=[],rs=[]))
 print (dfs_recursive(graph,'e',visited_array=[],rs=[]))
+
+#Output
+#['a', 'c', 'e', 'b', 'd']
+#['b', 'd', 'a', 'c', 'e']
+#['c', 'e', 'b', 'd', 'a']
+#['d', 'a', 'c', 'e', 'b']
+#['e', 'b', 'c', 'd', 'a']
