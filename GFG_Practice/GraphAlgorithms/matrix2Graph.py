@@ -1,3 +1,8 @@
+"""
+1. Edges between cells that share an edge
+2. Traversal is only possible horizontally and vertically
+"""
+
 import collections
 def matrix2graph(mlist):
     ihor=0
