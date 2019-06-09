@@ -35,6 +35,11 @@ print (bfs(graph,'c',visited_array=[]))
 print (bfs(graph,'d',visited_array=[]))
 print (bfs(graph,'e',visited_array=[]))
 
+#['a', 'c', 'e', 'b', 'd']
+#['b', 'd', 'a', 'c', 'e']
+#['c', 'e', 'b', 'd', 'a']
+#['d', 'a', 'c', 'e', 'b']
+#['e', 'b', 'c', 'd', 'a']
 
 graph2 = {'0': ['1', '2'],
           '1': ['2'], '2': ['0', '3'], '3': ['3','2']}
@@ -43,3 +48,8 @@ print (bfs(graph2,'0',visited_array=[]))
 print (bfs(graph2,'1',visited_array=[]))
 print (bfs(graph2,'2',visited_array=[]))
 print (bfs(graph2,'3',visited_array=[]))
+
+#['0', '1', '2', '3']
+#['1', '2', '0', '3']
+#['2', '0', '3', '1']
+#['3', '2', '0', '1']
