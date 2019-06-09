@@ -35,3 +35,10 @@ print (dfs_iterative(graph,'b',visited_array=[]))
 print (dfs_iterative(graph,'c',visited_array=[]))
 print (dfs_iterative(graph,'d',visited_array=[]))
 print (dfs_iterative(graph,'e',visited_array=[]))
+
+#Output
+#['a', 'c', 'e', 'b', 'd']
+#['b', 'd', 'a', 'c', 'e']
+#['c', 'e', 'b', 'd', 'a']
+#['d', 'a', 'c', 'e', 'b']
+#['e', 'b', 'c', 'd', 'a']
