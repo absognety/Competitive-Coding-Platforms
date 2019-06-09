@@ -42,3 +42,12 @@ print (dfs_iterative(graph,'e',visited_array=[]))
 #['c', 'e', 'b', 'd', 'a']
 #['d', 'a', 'c', 'e', 'b']
 #['e', 'b', 'c', 'd', 'a']
+
+#Sample Test case that can be taken
+
+#testCase = {'1': ['2', '3'],
+# '2': ['1', '4', '5'],
+# '3': ['1', '5'],
+# '4': ['2', '5', '6'],
+# '5': ['2', '3', '4', '6'],
+# '6': ['4', '5']}
