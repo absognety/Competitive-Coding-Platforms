@@ -24,6 +24,7 @@ def bfs(G,s,visited_array=[]):
         # processing all the neighbours of v
         for w in G[v]:
             if w not in visited_array:
+                #Stores w in Q to further visit its neighbour
                 Q.put(w)
                 visited_array.append(w)
     return (visited_array)
