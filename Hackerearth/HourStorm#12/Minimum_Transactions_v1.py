@@ -1,8 +1,5 @@
 import collections
 def minTransact(trans_arr,n):
-    x = set(trans_arr[0][:2])
-    for y in trans_arr[1:]:
-        x = x.union(set(y[:2]))
     ai = set([i[0] for i in trans_arr])
     bi = set([i[1] for i in trans_arr])
     if ai == bi:
