@@ -1,8 +1,7 @@
-## GFG-Coding
+# Questions on Algorithms and Data Structures
 
-**Geeks For Geeks/Hackerearth Coding Problems (solved in Examinations,Practice)**
-
-
+**Geeks For Geeks/Hackerearth and Problems from different platforms (solved in Examinations,Practice)**
+  
 #### About this Repository:
 + I have been developing this repository for some time, I have been upgrading this repo with latest coding solutions and questions that I have been encountering in different tests, practice and also my own personal collection (Hackerearth + GeeksForGeeks)
 
