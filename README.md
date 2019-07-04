@@ -7,7 +7,7 @@
 
 + The Coding questions from other platforms like codechef, hackerrank, interviewBit are also included here - directories are created separately for different data structures.
 
-+ The questions for few problems are shared in the form of images (JPEGs/PNGs)
++ The questions for few problems are shared in the form of images (JPEGs/PNGs) and for few problems they are embedded in the form of multiline docstrings.
 
 + Feel free to contribute to this repo with your own codes by creating a pull request 😛 👍.
 
