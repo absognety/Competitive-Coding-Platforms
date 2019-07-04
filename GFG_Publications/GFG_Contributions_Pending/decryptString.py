@@ -1,3 +1,23 @@
+"""
+
+Given an encrypted string str, the task is to decrypt the given string when 
+the encryption rules are as follows:
+
+Start with the first character of the original string.
+In every odd step, append the next character to it.
+In every even step, prepend the next character to the encrypted string so far.
+For example, if str = “geeks” then the encrypted string will be,
+g -> ge -> ege -> egek -> segek
+
+Examples:
+
+Input: str = “segosegekfrek”
+Output: geeksforgeeks
+
+Input: str = “vrstie”
+Output: strive
+
+"""
 
 def encrypted_string(strg):
     EncryptedString = [strg[0]]
