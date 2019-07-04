@@ -1,6 +1,46 @@
 """
 Minimize the number of replacements to get a string with 
 same number of ‘a’, ‘b’ and ‘c’ in it
+
+Given a string consisting of only three possible characters ‘a’, ‘b’ or ‘c’. 
+The task is to replace characters of the given string with ‘a’, ‘b’ or ‘c’ 
+only such that there are equal number of characters of ‘a’, ‘b’ and ‘c’ in 
+the string. The task is to minimize the number of replacements and print 
+the lexicographically smallest string possible of all such strings with the 
+minimal replacements.
+
+If it is not possible to obtain such a string, print -1.
+
+Examples:
+
+Input : s = "bcabba"
+Output : bcabca
+Number of replacements done is 1 and this is
+the lexicographically smallest possible 
+
+Input : "aaaaaa"
+Output : aabbcc
+
+Input : "aaaaa"
+Output : -1
+
+
+Approach:
+
+1. Count the number of ‘a’, ‘b’ and ‘c’ in the string.
+2. If the count of them is equal then the same string will be the answer.
+3. If length of the string is not a multiple of 3, then it is not possible.
+4. First, reduce the number of exceeding a’s in the string.
+   a. Replace ‘c’ by ‘a’ if there are extra ‘c’ using a sliding window technique from left.
+   b. Replace ‘b’ by ‘a’ if there are extra ‘b’ using a sliding window technique from left in case of no ‘c’ at an index.
+5. Secondly, reduce the number of exceeding b’s in the string by replacing ‘c’ from front using sliding window.
+6. Thirdly, reduce the number of exceeding c’s by reducing the number of extra ‘a’ from the back using sliding window.
+7. Fourthly, reduce the number of exceeding b’s in the string by reducing the number of extra ‘a’ from the back.
+8. Fifthly, reduce the number of exceeding c’s if any by reducing the number of extra ‘b’ from the back.
+
+
+We keep on replacing from back in order to get lexicographically smallest string.
+
 """
 def minimize_replacements(STR):
     #Count of a's, b's and c's in a given string
