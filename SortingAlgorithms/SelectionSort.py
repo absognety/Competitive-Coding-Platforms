@@ -11,10 +11,8 @@ for i in range(n-1):
     for j in range(i+1,n):
         if Array[j] < Array[temp_minimum]:
             temp_minimum=j
-        j+=1
     TEMP=Array[temp_minimum]
     Array[temp_minimum]=Array[i]
     Array[i]=TEMP
-    i+=1
 print (Array)
 #Time Complexity= O(n**2)
