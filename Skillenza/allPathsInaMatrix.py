@@ -37,5 +37,5 @@ def findPathsUtil(maze,m,n,i,j,path,indx):
     # move down in y direction and call findPathsUtil recursively 
     findPathsUtil(maze, m, n, i+1, j, path, indx+1) 
       
-    # move down in y direction and call findPathsUtil recursively 
+    # move down in x direction and call findPathsUtil recursively 
     findPathsUtil(maze, m, n, i, j+1, path, indx+1) 
