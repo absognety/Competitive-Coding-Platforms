@@ -1,3 +1,42 @@
+"""
+Given two encoded strings str1 and str2 consisting of upper-case 
+English alphabets and the character ‘#’, decode the string based on the following operation:
+Whenever a ‘#’ is encountered, increment the previously encountered 
+alphabet by 1 (in a cyclic fashion i.e. A -> B, B -> C, ….., Z -> A). Finally, print Yes if both the strings are equal, else print No.
+Note: Every string will begin with an English alphabet.
+
+Input:
+The first line of input contains T denoting the number of testcases. T testcases follow. Each testcase contains two lines of input containing str1 and str2 in separate lines.
+
+Output:
+For each testcase, in a new line, print Yes if the two strings 
+become equal after the manipulation, else print No.
+
+Constraints:
+1 <= T <= 100
+1 <= |str1, str2| <= 103
+
+Examples:
+Input:
+2
+E#R##C
+FTA##
+B
+C
+Output:
+Yes
+No
+
+Explanation:
+Testcase1: str1 = E#R##C, and str2 = FTA##. Now, in str1 we 
+encounter # after E so we increment E to F. Next we encounter 
+two # after R, so we increment R two times to T. So str1 becomes 
+FTC. Similarly for str2 we encounter two # after A, so we increment 
+A two times to C. str2 becomes FTC. Both strings are now equal so 
+we print Yes.
+
+"""
+
 import string
 
 def getCircular(a, n, ind):
