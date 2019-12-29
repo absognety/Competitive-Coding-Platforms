@@ -43,7 +43,6 @@ def continuousSeries(arr,n):
             if len(req) == 0:
                 req.append([arr[el],arr[i]])
                 el += 1
-                
             else:
                 req[-1].extend([arr[el],arr[i]])
                 el += 1
