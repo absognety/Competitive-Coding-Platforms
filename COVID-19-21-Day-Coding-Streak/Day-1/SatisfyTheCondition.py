@@ -1,4 +1,6 @@
 """
+BRUTE-FORCE Approach
+
 Given an integer X. Your task is to find out how many positive integers 
 N ( 1 <= N <= X)  satisfy the following condition:-
 
