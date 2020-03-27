@@ -3,6 +3,11 @@
 #which the array A can be converted 
 #to another array B 
 
+#Given two arrays A[] and B[] of length N, the task is to find the 
+#minimum number of operations in which the array A can be converted into 
+#array B where each operation consists of adding an integer K into a subarray 
+#from L to R.
+
 # Utility function
 def checkArray(arrA,arrB,n):
     operations = 0
