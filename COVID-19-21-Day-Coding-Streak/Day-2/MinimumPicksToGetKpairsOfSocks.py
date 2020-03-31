@@ -49,3 +49,35 @@ Testcase 2 : Worst case scenario after 6 picks can be 3,3 or 1,5 or 5,1
 of each coloured socks. Hence 7th pick will ensure 3rd pair.
 
 """
+
+#User function Template for python3
+
+
+def find_min(a,n,k):
+    #Code Here
+    total = 0
+    fullPairs = 0
+    for i in range(n):
+        fullPairs += (a[i]//2)
+        if a[i]%2 == 0:
+            total += (a[i]-2)//2
+        else:
+            total += (a[i]-1)//2
+    if k > fullPairs:
+        return -1
+    if k <= total:
+        return (2 * (k-1) + n + 1)
+    return (2 * total + n + (k - total))
+
+
+#{ 
+#  Driver Code Starts
+#Initial Template for Python 3
+
+for _ in range(0,int(input())):
+    n = int(input())
+    a = list(map(int,input().split()))
+    k = int(input())
+    
+    print(find_min(a,n,k))
+# } Driver Code Ends
