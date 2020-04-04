@@ -2,6 +2,8 @@
 #DP solution
 """
 Refer the problem statement from 
+
+https://github.com/absognety/AlgorithmicQuestions/blob/master/COVID-19-21-Day-Coding-Streak/Day-4/MinimumTimeToPaintHouse.py
 """
 
 def Min_Time(arr,n,k):
