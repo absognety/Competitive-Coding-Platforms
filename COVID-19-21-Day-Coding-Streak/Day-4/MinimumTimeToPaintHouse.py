@@ -1,6 +1,8 @@
 #User function Template for python3
 # Brute Force Approach - Recursive solution
 """
+Lucy's Home
+
 Nancy has a cat named Lucy. She wants to paint her home which is made of N 
 wooden boards of different lengths denoted by [A1, A2,..., An]. She hires K painters to do this work. 
 Each painter takes 1 unit of time to paint 1 unit of board. Help her find the minimum time to get this 

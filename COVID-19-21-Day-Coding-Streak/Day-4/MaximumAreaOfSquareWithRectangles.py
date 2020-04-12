@@ -1,5 +1,7 @@
 #User function Template for python3
 """
+Hannah and her cookie box
+
 Hannah loves making cookies. She wants to parcel the biggest possible box of cookies to her friend Ana. 
 The box must be square in shape. Each cookie must be placed next to each other in the box ie- 
 no overlapping is allowed. The cookies she has made are all rectangular in size such that each is 1 unit wide 
