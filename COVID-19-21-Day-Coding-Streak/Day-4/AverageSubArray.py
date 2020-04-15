@@ -45,8 +45,44 @@ Output:
 
 #User function Template for python3
 
+def findInd(preSum,n,val):
+    l=0
+    h=n-1
+    ans = -1
+    while (l <= h):
+        mid = (l + h)//2
+        if preSum[mid][0] <= val:
+            ans = mid
+            l = mid + 1
+        else:
+            h = mid - 1
+    return ans
+
 def LongestSub(arr,n,x):
     #code here
+    for i in range(n):
+        arr[i] -= x
+    maxlen = 0
+    total = 0
+    minInd = [None] * n
+    preSum = []
+    for i in range(n):
+        total += arr[i]
+        preSum.append((total,i))
+    preSum = sorted(preSum)
+    minInd[0] = preSum[0][1]
+    for i in range(1,n):
+        minInd[i] = min(minInd[i-1],preSum[i][1])
+    total = 0
+    for i in range(n):
+        total += arr[i]
+        if total >= 0:
+            maxlen = i + 1
+        else:
+            ind = findInd(preSum,n,total)
+            if (ind != -1) & (minInd[ind] < i):
+                maxlen = max(maxlen,i - minInd[ind])
+    return maxlen
 
 
 
