@@ -27,6 +27,8 @@ class Node(object):
         self.right = right
 
 # serialize the nodes of binary tree (tree => list)
+
+# Using preorder traversal
 def serialize(node:Node) -> list:
     serialized_result = []
     if node == None:
