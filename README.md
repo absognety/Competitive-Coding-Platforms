@@ -1,5 +1,6 @@
-# Questions on Algorithms and Data Structures
-
+Questions on Algorithms and Data Structures  
+===========================================  
+  
 **Geeks For Geeks/Hackerearth and Problems from different platforms (solved in Examinations,Practice)**
   
 #### About this Repository:
