@@ -76,4 +76,5 @@ root.left.right.right = Node(14)
 
 res = serialize(root)
 print (res)
+#[20, 8, 4, '#', '#', 12, 10, '#', '#', 14, '#', '#', 22, '#', '#']
 org = deserialize(res)
