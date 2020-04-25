@@ -1,4 +1,7 @@
 """
+# Skeleton of python implementation of C++ code.
+pointer programming in python is a bit of challenge.
+
 Daily Coding Problem #6
 
 This problem was asked by Google.
