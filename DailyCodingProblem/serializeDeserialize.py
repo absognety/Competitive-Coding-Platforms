@@ -75,4 +75,5 @@ root.left.right.left = Node(10)
 root.left.right.right = Node(14)
 
 res = serialize(root)
+print (res)
 org = deserialize(res)
