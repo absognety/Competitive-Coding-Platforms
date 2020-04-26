@@ -2,6 +2,8 @@
 # Skeleton of python implementation of C++ code.
 pointer programming in python is a bit of challenge.
 
+refer https://github.com/subsr97/daily-coding-problem/blob/master/challenges/xor-linked-list.py
+
 Daily Coding Problem #6
 
 This problem was asked by Google.
@@ -20,49 +22,48 @@ and memory addresses.
 class Node:
     def __init__(self,data):
         self.data = data
-        self.npx = None
+        self.both = 0
         
-def XORValue(a,b):
-    return Node(a.data ^ b.data)
+    def __str__(self):
+        return str(self.data)
+        
+class XORLinkedList:
+    
+    def __init__(self):
+        self.head = Node(None)
+        self.tail = Node(None)
+        
+    def add(self,element):
+        new_node = Node(element)
+        if self.head.data == None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.both = get_pointer(self.tail)
+            self.tail.both = self.tail.both ^ get_pointer(new_node)
+            self.tail = new_node
+            
+    def get(self,ind):
+        previous = 0
+        current = self.head
+        for i in range(0,ind-1):
+            temp = get_pointer(current)
+            current = dereference_pointer(previous^current.both)
+            previous = temp
+            if current.both == previous and i < ind-2:
+                print("Invalid index.")
+                return None
+        return current
 
-def insert(head_ref,data):
-    # Allocate memory for new node
-    new_node = Node(data)
     
-    #Since new node is being inserted at the  
-    #beginning, npx of new node will always be  
-    #XOR of current head and NULL
-    new_node.npx = head_ref
-    
-    #If linked list is not empty, then npx of  
-    #current head node will be XOR of new node  
-    #and node next to current head
-    if head_ref != None:
-        
-        #*(head_ref)->npx is XOR of NULL and next.  
-        #So if we do XOR of it with NULL, we get next 
-        head_ref.npx = XORValue(new_node,head_ref.npx)
-    head_ref = new_node
-    return
-    
-def printList(head):
-    curr = head
-    prev = None
-    
-    while (curr != None):
-        print (curr.data)
-        next_node = XORValue(prev,curr.npx)
-        prev = curr
-        curr = next_node
-    return
-        
 if __name__ == '__main__':
     #/* Create following Doubly Linked List  
     #head-->40<-->30<-->20<-->10 */
-    head = Node(None)
-    insert(head,10)
-    insert(head,20)
-    insert(head,30)
-    insert(head,40)
+    xor_list = XORLinkedList()
     
-    printList(head)
+    xor_list.add(10)
+    xor_list.add(20)
+    xor_list.add(30)
+    xor_list.add(40)
+    
+    print (xor_list.get(2))
