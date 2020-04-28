@@ -5,6 +5,14 @@ This problem was asked by Apple.
 Implement a job scheduler which takes in a function f and an integer n, 
 and calls f after n milliseconds.
 
+Sol: The solution demonstrated here is simplified version of event scheduling
+program
+
+But for more efficient workflow management and monitoring frameworks, please
+explore:
+    1. Prefect (https://www.prefect.io/)
+    2. Airflow (The Apache software foundation)
+    3. Crontab (Linux command line tool)
 """
 import time
 def f(a,b):
