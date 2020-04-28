@@ -6,3 +6,26 @@ Implement a job scheduler which takes in a function f and an integer n,
 and calls f after n milliseconds.
 
 """
+import time
+def f(a,b):
+    s = a + b
+    print ("the sum of 2 numbers {},{} is {}".format(a,b,s))
+    d = abs(a-b)
+    print ("the absolute difference of 2 numbers {},{} is {}".format(a,b,d))
+    product = a*b
+    print ("the product of 2 numbers {},{} is {}".format(a,b,product))
+    if b != 0:
+        div = a/b
+        print ("the division answer of 2 numbers {},{} is {}".format(a,b,div))
+    else:
+        print ("the division of two numbers is not possible")
+        
+def scheduler(f,m,n):
+    f(m,n)
+
+if __name__ == '__main__':
+    n = int(input())
+    while True:
+        time.sleep(n/1000)
+        scheduler(f,34,17)
+        break
