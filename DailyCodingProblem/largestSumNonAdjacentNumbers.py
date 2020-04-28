@@ -60,6 +60,24 @@ def largestSum(arr,n):
         j += 1
     return max(maxSum1,maxSum2,maxSum3,maxSum4)
 
+
+## O(N) implementation
+## Simple Code from GeeksForGeeks
+    
+def findMaxSum(arr,n):
+    incl = arr[0]
+    excl = 0
+    
+    for i in range(1,n):
+        excl_new = incl if incl > excl else excl
+        incl = excl + arr[i] 
+        excl = excl_new
+        
+    if incl > excl:
+        return incl
+    else:
+        return excl
+
     
 if __name__ == '__main__':
     T = int(input())
@@ -67,3 +85,4 @@ if __name__ == '__main__':
         arr = list(map(int,input().strip().split()))
         n = len(arr)
         print (largestSum(arr,n))
+        print (findMaxSum(arr,n))
