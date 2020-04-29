@@ -11,4 +11,15 @@ For example, given the query string de and the set of strings
 
 Hint: Try preprocessing the dictionary into a more efficient data 
 structure to speed up queries.
+
 """
+
+def auto_complete(s,stringset):
+    return [x for x in stringset if x.startswith(s)]
+
+if __name__ == '__main__':
+    T = int(input())
+    for tcs in range(T):
+        s = input()
+        stringset = input().strip().split()
+        print (auto_complete(s,stringset))
