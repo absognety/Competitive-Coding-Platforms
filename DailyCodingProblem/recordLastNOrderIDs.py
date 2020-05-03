@@ -9,4 +9,34 @@ Implement a data structure to accomplish this, with the following API:
     than or equal to N.
     3. You should be as efficient with time and space as possible.
     
+
+Approach: Stack data structure seems like a good fit, let's try..
+
 """
+
+def record(order_id):
+    stack.append(order_id)
+    return
+
+def get_last(i):
+    assert i <= N,"i is not less than or equal to N"
+    ele = stack.pop(-1 * i)
+    stack.insert(N - i,ele)
+    return ele
+
+if __name__ == '__main__':
+    N = int(input())
+    stack = []
+    for n in range(N):
+        order_id = input()
+        record(order_id)
+    while True:
+        print ("\n Please enter break to get out of loop")
+        index = input()
+        if index == 'break':
+            break
+        try:
+            index = int(index)
+        except:
+            raise Exception("The index you entered is not valid")
+        print (get_last(index))
