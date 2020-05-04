@@ -107,6 +107,24 @@ def optimalReOrder(g_rev,oppo,N):
         k = i
     print (arr1)
     print (arr2)
+    
+
+#merge sort approach (There might be a bug here..)    
+def optimal_reorder(g_rev,oppo,N):
+    tagged_grev = [('d',i) for i in g_rev]
+    tagged_oppo = [('a',i) for i in oppo]
+    merged = tagged_grev + tagged_oppo
+    merged = sorted(merged,key=lambda x: x[1])
+    max_wins = 0
+    for i in range(len(merged)-1):
+        print (i)
+        if set((merged[i][0],merged[i+1][0])) == {'a','d'}:
+            if (merged[i][0] == 'a') and (merged[i+1][0] == 'd'):
+                if (merged[i][1] < merged[i+1][1]):
+                    print (merged[i][1],merged[i+1][1])
+                    max_wins += 1
+    return max_wins
+    
 
 if __name__ == '__main__':
     T = int(input())
@@ -115,3 +133,4 @@ if __name__ == '__main__':
         g_rev = list(map(int,input().strip().split()))
         oppo = list(map(int,input().strip().split()))
         optimalReOrder(g_rev,oppo,N)
+        print (optimal_reorder(g_rev,oppo,N))
