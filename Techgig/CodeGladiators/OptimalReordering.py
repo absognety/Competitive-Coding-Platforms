@@ -84,7 +84,7 @@ Output
 7
 """
 
-#Greedy approach may be right/generic solution
+#Greedy approach may not be right/generic solution
 def optimalReOrder(g_rev,oppo,N):
     arr1 = g_rev.copy()
     arr2 = oppo.copy()
