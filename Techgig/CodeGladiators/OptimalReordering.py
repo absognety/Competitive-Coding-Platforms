@@ -124,7 +124,37 @@ def optimal_reorder(g_rev,oppo,N):
                     print (merged[i][1],merged[i+1][1])
                     max_wins += 1
     return max_wins
-    
+
+def optimal_reorder2(A,B):
+    arrA = A.copy()
+    C = [None] * len(B)
+    for i in range(len(B)):
+        k = i + 1
+        all_ele = []
+        while (k < len(arrA)):
+            if arrA[k] > B[i]:
+                all_ele.append(arrA[k])
+            k += 1
+        if all_ele:
+            e = min(all_ele)
+        else:
+            e = min(arrA)
+        C[i] = e
+        arrA.remove(e)
+    return C
+
+import itertools
+def optimal_reorder3(A,B):
+    possible_arrs = set(itertools.permutations(A,len(A)))
+    maxwins = 0
+    for arr in possible_arrs:
+        wins = 0
+        for x in range(len(A)):
+            if arr[x] > B[x]:
+                wins += 1
+        if maxwins < wins:
+            maxwins = wins
+    return maxwins
 
 if __name__ == '__main__':
     T = int(input())
