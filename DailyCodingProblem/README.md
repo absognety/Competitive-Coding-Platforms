@@ -19,3 +19,15 @@ Please find the contents below:
 15. [Problem #15]  
 16. [Problem #16](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/recordLastNOrderIDs.py)  
 17. [Problem #17](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/longestAbsolutePath.py)  
+18. [Problem #18]  
+19. [Problem #19]  
+20. [Problem #20]  
+21. [Problem #21]  
+22. [Problem #22]  
+23. [Problem #23]  
+24. [Problem #24]  
+25. [Problem #25](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/implement_regex.py)  
+26. [Problem #26]  
+27. [Problem #27]  
+28. [Problem #28]  
+29. [Problem #29](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/runLengthEncodingDecoding.py)  
