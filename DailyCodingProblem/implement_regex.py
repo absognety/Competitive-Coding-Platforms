@@ -24,15 +24,36 @@ part - 2:
 
 """
 
-#part - 1 solution
+import re
 def regex_match1(string,regex):
-    v = regex.split('.')
-    if v[0] != '':
-        t = v[0]
-    else:
-        t = v[1]
-    if (string.startswith(t) or string.endswith(t)):
-        if len(string) == len(t) + 1:
-            return 'true'
-        return 'false'
-    return 'false'        
+    #part - 1 solution
+    if (('*' not in regex) and ('.' in regex)):
+        if len(string) != len(regex):
+            return 'false'
+        indices_period = []
+        for ind,val in enumerate(regex):
+            if val == '.':
+                indices_period.append(ind)
+        collector = [[]]
+        for m in range(len(string)):
+            if m not in indices_period:
+                collector[-1].append(m)
+            else:
+                collector.append([])
+        tracker = []
+        for lis in collector:
+            if lis != []:
+                for q in lis:
+                    if regex[q] == string[q]:
+                        tracker.append(True)
+                    else:
+                        return 'false'
+        assert len(set(tracker)) == 1,"some of characters are mismatching"
+        return 'true'
+    elif ('*' in regex):
+        #part - 2 solution
+        re_match = re.search(regex,string)
+        c = re_match.span()
+        if len(string) != len(string[c[0]:c[1]]):
+            return 'false'
+        return 'true'
