@@ -35,6 +35,18 @@ def encode(string):
         u += alpha
     return encoded_str
 
+
+def decode(string):
+    list1 = string[1::2]
+    list2 = string[::2]
+    decoded_str = ''
+    for x in range(len(list1)):
+        decoded_str += list1[x] * int(list2[x])
+    return decoded_str
+
 if __name__ == '__main__':
-    string = 'AAAABBBCCDDAA'
-    print (encode(string))
+    string = 'AAAABBBCCDAA'
+    encoded_str = encode(string)
+    decoded_str = decode(encoded_str)
+    print (encoded_str)
+    print (decoded_str)
