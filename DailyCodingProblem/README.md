@@ -29,5 +29,5 @@ Please find the contents below:
 25. [Problem #25](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/implement_regex.py)  
 26. [Problem #26]  
 27. [Problem #27]  
-28. [Problem #28]  
+28. [Problem #28](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/justifyText.py)  
 29. [Problem #29](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/runLengthEncodingDecoding.py)  
