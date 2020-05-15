@@ -1,4 +1,7 @@
 """
+
+Daily Coding Problem #28
+
 This problem was asked by Palantir.
 
 Write an algorithm to justify text. Given a sequence of words and an integer 
