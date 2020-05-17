@@ -27,7 +27,7 @@ Please find the contents below:
 23. [Problem #23]  
 24. [Problem #24]  
 25. [Problem #25](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/implement_regex.py)  
-26. [Problem #26]  
-27. [Problem #27]  
+26. [Problem #26](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/removeKthLastElement.py)  
+27. [Problem #27](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/IsStringBalanced.py)  
 28. [Problem #28](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/justifyText.py)  
 29. [Problem #29](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/runLengthEncodingDecoding.py)  
