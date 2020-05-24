@@ -11,4 +11,15 @@ Given an N by K matrix where the nth row and kth column represents the cost to
 build the nth house with kth color, return the minimum cost which achieves 
 this goal.
 
-"""
+Solution:
+    This problem statment can be translated into Hungarian assignment problem.
+    (min-cost flow problem)
+
+"""   
+def mincost(arr,n,k):
+    pass
+    
+if __name__ == '__main__':
+    N,K = list(map(int,input().strip().split()))
+    matrix = [[int(input()) for q in range(K)] for p in range(N)]
+    print (mincost(matrix,N,K))
