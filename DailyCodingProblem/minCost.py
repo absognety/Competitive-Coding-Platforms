@@ -15,11 +15,24 @@ Solution:
     This problem statment can be translated into Hungarian assignment problem.
     (min-cost flow problem)
 
-"""   
-def mincost(arr,n,k):
-    pass
+"""
+import math
+def mincost(arr,row,prevcol,n,k):
+    if row == len(arr):
+        return 0
+    C = len(arr[row])
+    dp = [[math.inf for x in range(k+1)] for y in range(n)]
+    if dp[row][prevcol+1] != math.inf:
+        return dp[row][prevcol+1]
+    res = math.inf
+    for j in range(C):
+        if j != prevcol:
+            val = arr[row][j] + mincost(arr,row+1,j,n,k)
+            res = min(res,val)
+    dp[row][prevcol+1] = res
+    return res
     
 if __name__ == '__main__':
     N,K = list(map(int,input().strip().split()))
     matrix = [[int(input()) for q in range(K)] for p in range(N)]
-    print (mincost(matrix,N,K))
+    print (mincost(matrix,0,-1,N,K))
