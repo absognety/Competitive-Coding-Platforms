@@ -67,10 +67,10 @@ def longestAbsolutePath(string):
         t -= 1
     result.append("dir")
     result = "/".join(result[::-1])
-    return len(result)
+    return len(result),result
     
 if __name__ == '__main__':
-    T = int(input())
-    for tcs in range(T):
-        s = input()
-        print (longestAbsolutePath(s))
+    s1 = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
+    s2 = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
+    print (longestAbsolutePath(s1))
+    print (longestAbsolutePath(s2))
