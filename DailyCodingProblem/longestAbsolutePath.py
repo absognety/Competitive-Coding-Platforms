@@ -44,9 +44,30 @@ The name of a directory or sub-directory will not contain a period.
 
 def longestAbsolutePath(string):
     """
-    write your code here
+    write your code here - two scenarios possible:
+        1. file (string with period exists)
+        2. no file exists (longest absolute path may have to contain only sub-directories)
     """
-    pass
+    lines = string.splitlines()
+    files = []
+    for line in lines:
+        if '.' in line:
+            files.append((line,line.count("\t")))
+    files = sorted(files,key=lambda x: x[1],reverse=True)
+    last_file = files[0][0]
+    last_index = lines.index(last_file)
+    t = last_file.count("\t")
+    result = []
+    while (t >= 1):
+        assert last_file.count("\t")==t,"number of tabs are correctly present"
+        tokens = last_file.split("\t")
+        result.append(tokens[-1])
+        last_index -= 1
+        last_file = lines[last_index]
+        t -= 1
+    result.append("dir")
+    result = "/".join(result[::-1])
+    return len(result)
     
 if __name__ == '__main__':
     T = int(input())
