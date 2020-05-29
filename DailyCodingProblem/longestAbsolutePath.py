@@ -59,7 +59,7 @@ def longestAbsolutePath(string):
     t = last_file.count("\t")
     result = []
     while (t >= 1):
-        assert last_file.count("\t")==t,"number of tabs are not present correctly"
+        assert last_file.count("\t")==t,"number of tabs are not present correctly/given string of filesystem is improper"
         tokens = last_file.split("\t")
         result.append(tokens[-1])
         last_index -= 1
