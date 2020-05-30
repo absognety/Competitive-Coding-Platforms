@@ -51,8 +51,7 @@ def longestAbsolutePath(string):
     lines = string.splitlines()
     files = []
     for line in lines:
-        if '.' in line:
-            files.append((line,line.count("\t")))
+        files.append((line,line.count("\t")))
     files = sorted(files,key=lambda x: x[1],reverse=True)
     last_file = files[0][0]
     last_index = lines.index(last_file)
@@ -72,5 +71,7 @@ def longestAbsolutePath(string):
 if __name__ == '__main__':
     s1 = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
     s2 = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
+    s3 = "dir\n\tsubdir1\n\t\tsubsubdir1\n\t\t\tsubsubsubdir1\n\tsubdir2\n\t\tsubsubdir2"
     print (longestAbsolutePath(s1))
     print (longestAbsolutePath(s2))
+    print (longestAbsolutePath(s3))
