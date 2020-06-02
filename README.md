@@ -1,7 +1,5 @@
-Programming Questions on Algorithms and Data Structures  
+programming questions from different competitive coding platforms for Algorithms and Data Structures  
 ===========================================  
-  
-**Problems from different platforms and websites**
   
 #### About this Repository:
 + I have been developing this repository for some time, I have been upgrading this repo with latest coding solutions and questions that I have been encountering in different tests, practice and also my own personal collection (Hackerearth + GeeksForGeeks)  
