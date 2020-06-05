@@ -8,7 +8,8 @@ Example:
     
 Generalized:
     Given a number and array of numbers, what is the minumum number of elements
-    from array needed such that their sum results in the given number.
+    from array needed such that their combinatorial sum (with repitition allowed) 
+    results in the given number.
     
 Solution:
     Approach-1: 
