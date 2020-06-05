@@ -9,11 +9,20 @@ Example:
 Generalized:
     Given a number and array of numbers, what is the minumum number of elements
     from array needed such that their sum results in the given number.
-
+    
+Solution:
+    Approach-1: 
+        1. itertools API solution used here doesn't take into consideration that
+        elements can be repeated in achieving the sum
+        Example:
+            x = 173
+            x = 100 + 50 + 10 + 10 + 1 + 1 + 1
+            Here 10 is used twice and 1 thrice.
 """
 
 import itertools
 def minimum_numbers(arr,k):
+    #duplication is restricted here
     for i in range(1,len(arr)):
         cbs = set(itertools.combinations(arr,i))
         for c in cbs:
