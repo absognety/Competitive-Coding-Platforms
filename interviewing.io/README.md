@@ -1,4 +1,4 @@
-# Interviewing.io: Please checkout their channel for these problems (my own solutions are added here).
+# Interviewing.io: Please checkout `interviewing.io` youtube channel channel for these problems (my own solutions are added here).
 
 ## Google Interview Questions:  
   
