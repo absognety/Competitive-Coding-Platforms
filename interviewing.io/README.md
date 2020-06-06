@@ -1,4 +1,4 @@
-# Interviewing.io: Please checkout `interviewing.io` youtube channel channel for these problems (Difference is my own solutions are added here).  
+# Interviewing.io: Please checkout `interviewing.io` youtube channel for these problems (Difference is my own solutions are added here).  
 1. See the question from the video.  
 2. pause the video.  
 3. Try it on your own.  
