@@ -24,6 +24,7 @@ def reverse_string2(s):
     return ''.join(u)
 
 #Two pointer approach to swap the characters
+#Use O(n) space as strings are immutable
 def reverse_string3(s):
     start = 0
     end = len(s) - 1
