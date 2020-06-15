@@ -23,8 +23,22 @@ def reverse_string2(s):
         u[v-c-1] = s[c]
     return ''.join(u)
 
+def reverse_string3(s):
+    start = 0
+    end = len(s) - 1
+    s = list(s)
+    while (start != end):
+        temp = s[start]
+        s[start]=s[end]
+        s[end] = temp
+        start += 1
+        end -= 1
+    return "".join(s)
+        
+
 if __name__ == '__main__':
     string = "competitive"
     print (reverse_string(string))
     print (reverse_string1(string))
     print (reverse_string2(string))
+    print (reverse_string3(string))
