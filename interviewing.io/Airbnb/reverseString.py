@@ -23,6 +23,7 @@ def reverse_string2(s):
         u[v-c-1] = s[c]
     return ''.join(u)
 
+#Two pointer approach to swap the characters
 def reverse_string3(s):
     start = 0
     end = len(s) - 1
