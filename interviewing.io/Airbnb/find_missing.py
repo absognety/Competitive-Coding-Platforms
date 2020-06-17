@@ -25,14 +25,36 @@ def findMissing1(arr1,arr2):
     return -1
 
 
-#Using set() (O(N) and O(N) space)
+#INT_LIMIT can exceed here in this solution
 def findMissing2(arr1,arr2):
     return sum(arr1) - sum(arr2)
 
-    
+#To solve larger integers OVERFLOW problem
+#Mostly this will occur in C/C++
+def findMissing3(arr1,arr2):
+    h1 = h2 = 0
+    sums = 0
+    while ((h1 < len(arr1)) and (h2 < len(arr2))):
+        if sums < 0:
+            sums += arr1[h1]
+            h1 += 1
+        else:
+            sums -= arr2[h2]
+            h2 += 1
+    while (h1 < len(arr1)):
+        sums += arr1[h1]
+        h1 += 1
+    while (h2 < len(arr2)):
+        sums -= arr2[h2]
+        h2 += 1
+        
+    return sums
+
+
 if __name__ == '__main__':
     arr1 = [4,8,12,9,3]
     arr2 = [4,8,9,3]
     print (findMissing(arr1,arr2))
     print (findMissing1(arr1,arr2))
     print (findMissing2(arr1,arr2))
+    print (findMissing3(arr1,arr2))
