@@ -24,18 +24,21 @@ def reverse_string2(s):
     return ''.join(u)
 
 #Two pointer approach to swap the characters
-#Use O(n) space as strings are immutable
+#O(1) space as nothing is stored here
 def reverse_string3(s):
-    start = 0
-    end = len(s) - 1
-    s = list(s)
-    while (start != end):
-        temp = s[start]
-        s[start]=s[end]
-        s[end] = temp
-        start += 1
-        end -= 1
-    return "".join(s)
+    if len(s) > 1:
+        start = 0
+        end = len(s) - 1
+        s = list(s)
+        while (start != end):
+            temp = s[start]
+            s[start]=s[end]
+            s[end] = temp
+            start += 1
+            end -= 1
+        return "".join(s)
+    else:
+        return s
         
 
 if __name__ == '__main__':
@@ -44,3 +47,4 @@ if __name__ == '__main__':
     print (reverse_string1(string))
     print (reverse_string2(string))
     print (reverse_string3(string))
+    print (reverse_string3('g'))
