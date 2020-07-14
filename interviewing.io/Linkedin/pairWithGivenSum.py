@@ -20,6 +20,7 @@ def find_pair(arr,x):
     return -1
 
 
+#this handles only distinct values in array
 def find_pairs(arr,x):
     value_dict = {}
     for value in arr:
@@ -31,9 +32,27 @@ def find_pairs(arr,x):
     return ("No valid pairs")
 
 
+def find_pairs2(arr,x):
+    value_dict = {}
+    for value in arr:
+        if value in value_dict:
+            value_dict[value] += 1
+        else:
+            value_dict[value] = 0
+    for value in arr:
+        target_compliment = x - value
+        if target_compliment in value_dict:
+            if target_compliment == value:
+                if not value_dict[target_compliment] > 0:
+                    continue
+            return "{} and {}".format(target_compliment,value)
+    return "No valid pairs"
+
+
 if __name__ == '__main__':
     for tcase in range(T:=int(input())):
         arr = list(map(int,input().strip().split()))
         x = int(input())
         print (find_pair(arr, x))   
         print (find_pairs(arr, x))
+        print (find_pairs2(arr, x))
