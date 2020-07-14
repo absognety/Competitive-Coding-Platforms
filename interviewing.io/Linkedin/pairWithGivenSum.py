@@ -19,8 +19,21 @@ def find_pair(arr,x):
             print ("incrementing start")
     return -1
 
+
+def find_pairs(arr,x):
+    value_dict = {}
+    for value in arr:
+        value_dict[value] = True
+    for value in arr:
+        target_compliment = x - value
+        if target_compliment in value_dict:
+            return ("{} and {}".format(target_compliment,value))
+    return ("No valid pairs")
+
+
 if __name__ == '__main__':
     for tcase in range(T:=int(input())):
         arr = list(map(int,input().strip().split()))
         x = int(input())
-        print (find_pair(arr, x))      
+        print (find_pair(arr, x))   
+        print (find_pairs(arr, x))
