@@ -19,7 +19,7 @@ Write methods for this graph as follows:
         
 Solution:
     The graph data structure in python can be respresented best by dictionary 
-    of sets or dictionary of lists
+    of sets or dictionary of lists with params (nodes, isDirected)
 """
 
 
