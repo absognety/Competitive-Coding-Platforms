@@ -1,5 +1,6 @@
 """
 Daily Coding Problem #103
+This problem was asked by Square
 
 Given a string and a set of characters, return the shortest substring 
 containing all the characters in the set.
