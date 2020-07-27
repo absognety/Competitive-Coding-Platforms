@@ -28,6 +28,7 @@ def get_elements(arr,k):
             return sub_arr
     return -1
 
+#print all sub-arrays that sum to k
 def get_elements_all(arr,k):
     for sub_arr in allSubArrays(arr):
         if sum(sub_arr) == k:
