@@ -16,6 +16,8 @@ For example, in this matrix
 
 The most we can collect is 0 + 2 + 1 + 5 + 3 + 1 = 12 coins.
 
+https://www.hackerearth.com/practice/notes/dynamic-programming-problems-involving-grids/
+
 """
 
 def maxCost(arr,R,C):
