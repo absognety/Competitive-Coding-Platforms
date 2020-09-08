@@ -126,3 +126,12 @@ if __name__ == '__main__':
     C = len(arr3[0])
     print("Area of maximum rectangle is",  
                          maxRectangle(R,C,arr3)) 
+    
+    arr4 = [[1, 0, 0, 0],
+             [1, 0, 1, 1],
+             [1, 0, 1, 1],
+             [0, 1, 0, 0]]
+    R = len(arr4)
+    C = len(arr4[0])
+    print("Area of maximum rectangle is",  
+                         maxRectangle(R,C,arr4)) 
