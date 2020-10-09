@@ -22,6 +22,10 @@ the longest path would be c -> a -> d -> f, with a length of 17.
 The path does not have to pass through the root, and each node can have 
 any amount of children.
 
+Solution:
+    Refer Geeksforgeeks for base solution on top of which my solution is 
+    built.
+
 """
 
 
@@ -78,6 +82,8 @@ class Graph:
                     # mark the ith node as visited
                     visited[i] = True
                     # make distance of i , one more than distance of front
+                    #incase weights are not given otherwise, distance is
+                    #incremented by the value of the edge
                     distance[i] = distance[front]+self.distance[(i,front)]
                     # Push node into the stack only if it is not 
                     #visited already
