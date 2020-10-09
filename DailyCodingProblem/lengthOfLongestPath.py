@@ -51,7 +51,8 @@ class Graph:
         self.adj[u].append(v)
         # since the graph is undirected
         self.adj[v].append(u)
-        #store weight of the edge
+        #store weight of the edge both ways
+        #since graph is undirected
         self.distance[(u,v)] = d
         self.distance[(v,u)] = d
  
