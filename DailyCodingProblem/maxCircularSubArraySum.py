@@ -36,8 +36,12 @@ def maxSum(arr,n):
     else:
         return max_kadane
     
-if __name__ == '__main__':
-    for tcase in range(int(input())):
-        n = int(input())
-        arr = list(map(int,input().strip().split()))
-        print (maxSum(arr,n))
+# if __name__ == '__main__':
+#     for tcase in range(int(input())):
+#         n = int(input())
+#         arr = list(map(int,input().strip().split()))
+#         print (maxSum(arr,n))
+        
+##Test cases
+print (maxSum([8,-1,3,4], 4))
+print (maxSum([-4,5,1,0],4))
