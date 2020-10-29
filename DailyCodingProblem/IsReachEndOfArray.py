@@ -11,3 +11,27 @@ indices 0 -> 1 -> 3 -> 5, so return true.
 
 Given the array [1, 2, 1, 0, 0], we can't reach the end, so return false.
 """
+
+import math
+def min_jumps(arr,n):
+    if n==1:
+        return 0
+    res = math.inf
+    for i in range(n-2,-1,-1):
+        if (i + arr[i]) >= n-1:
+            sub_res = min_jumps(arr,i+1)
+            if (sub_res != res):
+                res = min(res,sub_res + 1)
+    return res
+
+def advance_to_end(arr,n):
+    x = min_jumps(arr,n)
+    if x > 0 and x != math.inf:
+        return "true"
+    elif x == 0 or x == math.inf:
+        return "false"
+
+if __name__ == '__main__':
+    for tcase in range(int(input())):
+        arr = list(map(int,input().strip().split()))
+        print (advance_to_end(arr,len(arr)))
