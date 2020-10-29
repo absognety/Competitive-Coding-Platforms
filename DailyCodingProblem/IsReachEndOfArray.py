@@ -20,7 +20,7 @@ def min_jumps(arr,n):
     for i in range(n-2,-1,-1):
         if (i + arr[i]) >= n-1:
             sub_res = min_jumps(arr,i+1)
-            if (sub_res != res):
+            if (sub_res != math.inf):
                 res = min(res,sub_res + 1)
     return res
 
