@@ -39,6 +39,6 @@ def partition_array(arr):
         i += 1
     sorted_subsets = sorted(subset_partitions.items(),
                             key = lambda x: x[1])
-    return sorted_subsets[0][0]
+    return sorted_subsets[0][0],sorted_subsets[0][1]
 
 print (partition_array([5, 10, 15, 20, 25]))
