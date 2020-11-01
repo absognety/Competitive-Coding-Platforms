@@ -1,33 +1,22 @@
 ## Please Subscribe here: https://www.dailycodingproblem.com/  
 To get Daily Coding problems to your email  
-
-Please find the contents below:  
-1. [Problem #1](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/checkPairsWithGivenSum.py)  
-2. [Problem #2](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/getNewArray.py)  
-3. [Problem #3](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/serializeDeserialize.py)  
-4. [Problem #4](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/leastMissingPositiveInteger.py)  
-5. [Problem #5](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/pairImplementation.py)  
-6. [Problem #6](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/XORLinkedList.py)  
-7. [Problem #7](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/possibleDecodings.py)  
-8. [Problem #8](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/numberOfUnivalSubTrees.py)  
-9. [Problem #9](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/largestSumNonAdjacentNumbers.py)  
-10. [Problem #10](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/JobScheduler.py)  
-11. [Problem #11](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/AutoCompleteSystem.py)  
-12. [Problem #12]  
-13. [Problem #13]  
-14. [Problem #14](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/estimatePiMonteCarlo.py)  
-15. [Problem #15]  
-16. [Problem #16](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/recordLastNOrderIDs.py)  
-17. [Problem #17](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/longestAbsolutePath.py)  
-18. [Problem #18]  
-19. [Problem #19](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/minCost.py)  
-20. [Problem #20](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/findIntersectionNode.py)  
-21. [Problem #21](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/minimumRooms.py)  
-22. [Problem #22](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/problem_22.py)  
-23. [Problem #23](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/minSteps.py)  
-24. [Problem #24](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/lock_Unlock_btree.py)  
-25. [Problem #25](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/implement_regex.py)  
-26. [Problem #26](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/removeKthLastElement.py)  
-27. [Problem #27](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/IsStringBalanced.py)  
-28. [Problem #28](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/justifyText.py)  
-29. [Problem #29](https://github.com/absognety/AlgorithmicQuestions/blob/master/DailyCodingProblem/runLengthEncodingDecoding.py)  
+  
+Following problems have been completed:  
+```
+11,188,
+153,157,
+192,27,10,
+189,127,128,6,
+1,14,163,185,
+80(nc),140,20(nc),
+155,125,152,102,2,103,
+141,154,25,123,28,
+9,4,160,24(nc),17,
+190,122,130,19,23(nc),
+135,191,21,150,8(nc),
+5,186,143,7,22,16,159,
+26,151,161,126,29,3,
+162,147,129,149
+```  
+`nc` means problem statement has been added but solution hasn't been added. Above list will be updated very often.  
+Not all the solutions have been developed by myself, but I managed to solve few questions with help from several resources on the web, my intention is to make this one go-to place for daily coding problem solutions for candidates looking to practice algorithms.  
