@@ -1,4 +1,6 @@
 """
+Daily Coding Problem #206
+
 This problem was asked by Twitter.
 
 A permutation can be specified by an array P, where P[i] represents 
