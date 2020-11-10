@@ -10,6 +10,10 @@ palindrome. Do not convert the integer into a string.
 """
 
 def isIntegerPalindrome(num):
+    if len(str(num)) == 0:
+        return "empty string"
+    if len(str(num)) == 1 and str(num).isdigit():
+        return True
     digits = []
     if (num%10) == 0:
         return False
@@ -24,3 +28,6 @@ print (isIntegerPalindrome(888))
 print (isIntegerPalindrome(121))
 print (isIntegerPalindrome(678))
 print (isIntegerPalindrome(234432))
+print (isIntegerPalindrome(23))
+print (isIntegerPalindrome(""))
+print (isIntegerPalindrome(8))
