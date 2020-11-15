@@ -21,6 +21,6 @@ Following problems have been completed:
 212,211  
 ```  
 `nc` means problem statement has been added but solution hasn't been added. Above list will be updated very often.  
-Not all the solutions have been developed by myself, but I managed to solve few questions with help from several resources on the web, my intention is to make this one go-to place for daily coding problem solutions for candidates looking to practice algorithms.  
+Not all the solutions have been developed by myself, but I managed to solve few questions with help from several resources on the web, my intention is to make this one stop shop for daily coding problem solutions for candidates looking to practice algorithms.  
   
 ## If you find these solutions helpful in cracking your coding tests and interviews, Please give a star to this repo.   
