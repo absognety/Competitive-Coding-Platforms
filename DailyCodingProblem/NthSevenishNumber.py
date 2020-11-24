@@ -13,7 +13,7 @@ nth sevenish number.
 import itertools
 def nth_sevenish_number(n):
     a = 0
-    i = 1
+    i = 0
     sevenish_powers = []
     sums = []
     while True:
@@ -33,8 +33,10 @@ def nth_sevenish_number(n):
         a,i = a + 1, i + 1
     union = set(sevenish_powers).union(set(sums))
     union = sorted(list(union))
-    return union[n-1],union
+    return union[n-1],union[:25]
 
 
-#print (nth_sevenish_number(5))
+print (nth_sevenish_number(5))
 print (nth_sevenish_number(15))
+print (nth_sevenish_number(20))
+print (nth_sevenish_number(28))
