@@ -37,21 +37,30 @@ def printLevelOrder(root):
     q = []
     #Enqueue Root and initialize height
     q.append(root)
+    level_position = 1
     while (len(q) != 0):
         # nodeCount (queue size) indicates number 
         # of nodes at current lelvel.
         nodeCount = len(q)
         # Dequeue all nodes of current level and  
-        # Enqueue all nodes of next level  
+        # Enqueue all nodes of next level 
+        level = []
         while (nodeCount > 0):
             node = q[0]
-            print (node.data,end = " ")
+            level.append(node.data)
             q.pop(0)
             if node.left != None:
                 q.append(node.left)
             if node.right != None:
                 q.append(node.right)
             nodeCount -= 1
+        if level_position%2 != 0:
+            for e in level:
+                print (e,end=" ")
+        else:
+            for e in range(len(level)-1,-1,-1):
+                print (level[e],end= " ")
+        level_position += 1
         print ()
     return
 
@@ -63,6 +72,7 @@ if __name__ == '__main__':
     root.right = Node(3)
     root.left.left = Node(4)
     root.left.right = Node(5)
-    root.right.right = Node(6)
+    root.right.left = Node(6)
+    root.right.right = Node(7)
 
     printLevelOrder(root)
