@@ -54,12 +54,15 @@ def printLevelOrder(root):
             if node.right != None:
                 q.append(node.right)
             nodeCount -= 1
+        #print from left to right when level is at 1,3,5,7......
         if level_position%2 != 0:
             for e in level:
                 print (e,end=" ")
+        #print from right to left when level is at 2,4,6,8.....
         else:
             for e in range(len(level)-1,-1,-1):
                 print (level[e],end= " ")
+        #incrementing the level_position by 1
         level_position += 1
         print ()
     return
