@@ -1,4 +1,6 @@
 """
+Daily Coding Problem #258
+
 This problem was asked by Morgan Stanley.
 
 In Ancient Greece, it was common to write text with the first line going left to 
