@@ -22,6 +22,8 @@ Output: 30  <--- Top
         -3 
         -5 
 """
+
+#Recursion based algorithm
 def sortedInsert(q:list,element:int):
     if (len(q) == 0):
         q.append(element)
