@@ -10,7 +10,9 @@ and space complexity of your solution?
 """
 
 def missing_numbers(full_list,given_list):
-    return set(full_list)-set(given_list)
+    result = set(full_list)-set(given_list)
+    print (len(result))
+    return result
 
 if __name__ == '__main__':
     t = int(input())
