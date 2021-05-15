@@ -19,7 +19,7 @@ Following problems have been completed:
 162,147,129,149,198,197,199,206,  
 205,203,202,201,207,209,208,210,195,  
 212,211,213,218,217,216,221,231,232,240  
-236,258  
+236,258,390  
 ```  
 `nc` means problem statement has been added but solution hasn't been added. Above list will be updated very often.  
 Not all the solutions have been developed by myself, but I managed to solve few questions with help from several resources on the web, my intention is to make this one stop shop for daily coding problem solutions for candidates looking to practice algorithms.  
