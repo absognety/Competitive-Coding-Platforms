@@ -43,6 +43,31 @@ def minimum_rooms(intervals):
         #print (start,end,heap)
     return cnt
 
+def minRooms(intervals):
+    startingTimes = []
+    endingTimes = []
+    for i in range(len(intervals)):
+        startingTimes.append(intervals[i][0])
+        endingTimes.append(intervals[i][1])
+    startingTimes = sorted(startingTimes)
+    endingTimes = sorted(endingTimes)
+    sIdx = 0
+    eIdx = 0
+    maxRooms = 0
+    currRooms = 0
+    while ((sIdx < len(startingTimes)) | (eIdx < len(endingTimes))):
+        if (sIdx >= len(startingTimes)):
+            break
+        if (startingTimes[sIdx] < endingTimes[eIdx]):
+            currRooms += 1
+            sIdx += 1
+        else:
+            currRooms -= 1
+            eIdx += 1
+        maxRooms = max(maxRooms,currRooms)
+    return maxRooms
+
+
 if __name__ == '__main__':
     intervals = [(30, 75), (0, 50), (60, 150)]
     intervals1 = [(0,30),(5,10),(15,20)]
@@ -58,3 +83,8 @@ if __name__ == '__main__':
     print (minimum_rooms(intervals2))
     print (minimum_rooms(intervals3))
     print (minimum_rooms(intervals))
+    
+    print (minRooms(intervals1))
+    print (minRooms(intervals2))
+    print (minRooms(intervals3))
+    print (minRooms(intervals))
