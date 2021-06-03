@@ -43,6 +43,12 @@ def minimum_rooms(intervals):
         #print (start,end,heap)
     return cnt
 
+
+# When a new meeting starts, we need an additional room.
+# When a meeting ends, we don’t need that room anymore prioritize the 
+# smaller starting or ending time if the start time and end time are equal, 
+# end time comes first.
+
 def minRooms(intervals):
     startingTimes = []
     endingTimes = []
