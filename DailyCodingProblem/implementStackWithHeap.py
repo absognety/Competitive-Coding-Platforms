@@ -40,7 +40,7 @@ class MaxHeapObj(object):
 # x = heapq.heappop(maxh).val  # pop max value
 
 class stackAPI():
-    def __init__(self,heap):
+    def __init__(self,heap:list):
         self.heap = heap
         self.pushed = []
         
@@ -61,7 +61,7 @@ class stackAPI():
             if c.val == recent:
                 inds.append(i)
         self.pushed.pop()
-        print (inds)
+        #print (inds)
         if 0 in inds:
             return self.heap_pop()
         else:
@@ -84,9 +84,14 @@ s.push(1)
 s.push(10)
 s.push(25)
 s.push(22)
-s.pop()
-s.pop()
-s.pop()
-s.pop()
-s.pop()
-s.pop()
+s.push(18)
+s.push(-1)
+s.push(8)
+for i in s.heap:
+    print (i)
+print (s.pop())
+print (s.pop())
+print (s.pop())
+print (s.pop())
+print (s.pop())
+print (s.pop())
