@@ -55,16 +55,18 @@ def getItinerary(flights:List[Tuple[str,str]],
     print (cSuccess,cFailure)
     return itinerary
     
-flights = [('SFO', 'HKO'), ('YYZ', 'SFO'), 
-           ('YUL', 'YYZ'), ('HKO', 'ORD')]
-s = 'YUL'
-print (getItinerary(flights, s))
 
-
-flights = [('SFO', 'COM'), ('COM', 'YYZ')]
-s = 'COM'
-print (getItinerary(flights, s))
-
-flights = [('A', 'B'), ('A', 'C'), ('B', 'C'), ('C', 'A')]
-s = 'A'
-print (getItinerary(flights, s))
+if __name__ == '__main__':
+    flights = [('SFO', 'HKO'), ('YYZ', 'SFO'), 
+               ('YUL', 'YYZ'), ('HKO', 'ORD')]
+    s = 'YUL'
+    print (getItinerary(flights, s))
+    
+    
+    flights = [('SFO', 'COM'), ('COM', 'YYZ')]
+    s = 'COM'
+    print (getItinerary(flights, s))
+    
+    flights = [('A', 'B'), ('A', 'C'), ('B', 'C'), ('C', 'A')]
+    s = 'A'
+    print (getItinerary(flights, s))
