@@ -9,7 +9,7 @@ of four in faster than O(log N) time.
 """
 
 import math
-def isPowerOf4(N):
+def isPowerOf4(N:int) -> bool:
     d = str(math.log(N,4))
     if d.split(".")[1] == "0":
         return True
