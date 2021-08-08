@@ -1,11 +1,4 @@
 '''
-# Sample code to perform I/O:
-
-name = input()                  # Reading input from STDIN
-print('Hi, %s.' % name)         # Writing output to STDOUT
-
-# Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
-
 You are given a range [L,R] . You are required to find the number of integers  
 in the range such that GCD(X,F(X)) > 1 where F(X) is equal to the sum of 
 digits of X in its hexadecimal (or base 16) representation.
