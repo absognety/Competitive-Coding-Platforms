@@ -1,5 +1,5 @@
-# Leetcode question:
-## Number of Students unable to eat lunch
+## Leetcode questions:
+### 1. Number of Students unable to eat lunch
 Overview
 We need to find the number of students who are unable to eat lunch at the school cafeteria.
 
