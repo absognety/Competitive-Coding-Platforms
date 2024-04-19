@@ -23,4 +23,23 @@ The number of students and the number of sandwiches are the same.
 We cannot change the order of the sandwiches.
 The only ways we can modify the order of the students is by giving them sandwiches, which removes them from the queue, or sending them to the back of the queue.
 
+Example 1:  
+Input: students = [1,1,0,0], sandwiches = [0,1,0,1]  
+Output: 0  
+Explanation:
+- Front student leaves the top sandwich and returns to the end of the line making students = [1,0,0,1].
+- Front student leaves the top sandwich and returns to the end of the line making students = [0,0,1,1].
+- Front student takes the top sandwich and leaves the line making students = [0,1,1] and sandwiches = [1,0,1].
+- Front student leaves the top sandwich and returns to the end of the line making students = [1,1,0].
+- Front student takes the top sandwich and leaves the line making students = [1,0] and sandwiches = [0,1].
+- Front student leaves the top sandwich and returns to the end of the line making students = [0,1].
+- Front student takes the top sandwich and leaves the line making students = [1] and sandwiches = [1].
+- Front student takes the top sandwich and leaves the line making students = [] and sandwiches = [].
+Hence all students are able to eat.
+
+Example 2:  
+Input: students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]  
+Output: 3  
+
+
 Solution: [NUEL.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/NUEL.py)
