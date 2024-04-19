@@ -22,3 +22,5 @@ Key Observations:
 The number of students and the number of sandwiches are the same.
 We cannot change the order of the sandwiches.
 The only ways we can modify the order of the students is by giving them sandwiches, which removes them from the queue, or sending them to the back of the queue.
+
+Solution: [NUEL.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/NUEL.py)
