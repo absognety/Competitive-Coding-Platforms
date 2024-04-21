@@ -1,3 +1,5 @@
+# Solution using Dynamic Programming
+
 def highestPossibleScore(scores:int,ages:int) -> int:
     n = len(ages)
     ageScorePair = list(zip(scores,ages))
