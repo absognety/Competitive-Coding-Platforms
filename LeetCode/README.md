@@ -77,3 +77,5 @@ Constraints:
 scores.length == ages.length  
 1 <= scores[i] <= 106  
 1 <= ages[i] <= 1000  
+
+Solution: [BTNC.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/BTNC.py)
