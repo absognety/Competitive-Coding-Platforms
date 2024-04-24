@@ -53,3 +53,27 @@ Solution:
 ```
 select name from customer where referee_id != 2 or referee_id is null
 ```
+
+### Article Views  
+Table: Views  
+| Column Name  | Type |
+| ------------- | ------------- |
+| article_id  | int  |
+| author_id   | int  |
+| viewer_id   | int  |
+| view_date   | date |  
+  
+There is no primary key (column with unique values) for this table, the table may have duplicate rows.
+Each row of this table indicates that some viewer viewed an article (written by some author) on some date. 
+Note that equal author_id and viewer_id indicate the same person.  
+  
+Write a solution to find all the authors that viewed at least one of their own articles.  
+Return the result table sorted by id in ascending order.  
+Solution:
+```
+select distinct derived_views.author_id as id
+from (select author_id, viewer_id, count(*) as view_count 
+      from views where author_id = viewer_id 
+      group by author_id, viewer_id) derived_views 
+where derived_views.view_count >= 1 order by derived_views.author_id;
+```
