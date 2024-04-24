@@ -77,3 +77,15 @@ from (select author_id, viewer_id, count(*) as view_count
       group by author_id, viewer_id) derived_views 
 where derived_views.view_count >= 1 order by derived_views.author_id;
 ```
+
+## Invalid Tweets
+Table: Tweets
+  
+| Column Name  | Type |
+| ------------- | ------------- |
+| tweet_id  | int  |
+| content  | varchar  |
+  
+tweet_id is the primary key (column with unique values) for this table.  
+This table contains all the tweets in a social media app.  
+Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.  
