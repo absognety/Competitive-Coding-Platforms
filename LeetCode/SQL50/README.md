@@ -1,5 +1,5 @@
-## SQL questions
-### Recyclable and low fat products
+# SQL questions - Leetcode (For Data Engineering)
+## Recyclable and low fat products
 Table: Products
 | Column Name  | Type |
 | ------------- | ------------- |
@@ -13,7 +13,7 @@ recyclable is an ENUM (category) of types ('Y', 'N') where 'Y' means this produc
 Write a solution to find the ids of products that are both low fat and recyclable.  
 Solution: `select product_id from products where low_fats='Y' and recyclable='Y';`  
   
-### Find Customer Referee  
+## Find Customer Referee  
 Table: Customer  
 
 | Column Name  | Type |
@@ -54,7 +54,7 @@ Solution:
 select name from customer where referee_id != 2 or referee_id is null
 ```
 
-### Article Views  
+## Article Views  
 Table: Views  
 | Column Name  | Type |
 | ------------- | ------------- |
