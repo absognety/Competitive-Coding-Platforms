@@ -50,7 +50,7 @@
 -- The second record does not meet any of the two criteria. Its tiv_2015 is not like any other policyholders and its location is the same as the third record, which makes the third record fail, too.
 -- So, the result is the sum of tiv_2016 of the first and last record, which is 45.
 
-Solution:
+-- Solution:
 -- Write your PostgreSQL query statement below
 select round(sum(Ins.tiv_2016)::numeric,2) as tiv_2016 from Insurance Ins 
 join (select tiv_2015 from (select tiv_2015,
