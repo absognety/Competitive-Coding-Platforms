@@ -78,4 +78,7 @@ scores.length == ages.length
 1 <= scores[i] <= 106  
 1 <= ages[i] <= 1000  
 
-Solution: [BTNC.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/BTNC.py)
+Solution: [BTNC.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/BTNC.py)  
+  
+## SQL Curated Top 50 Questions: [SQL50](https://github.com/absognety/Competitive-Coding-Platforms/tree/master/LeetCode/SQL50)  
+Link for Leetcode: https://leetcode.com/studyplan/top-sql-50/  
