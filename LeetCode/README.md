@@ -80,5 +80,5 @@ scores.length == ages.length
 
 Solution: [BTNC.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/BTNC.py)  
   
-## SQL Curated Top 50 Questions: [SQL50](https://github.com/absognety/Competitive-Coding-Platforms/tree/master/LeetCode/SQL50)  
-Link for Leetcode: https://leetcode.com/studyplan/top-sql-50/  
+## Solutions to Curated Top 50 SQL Questions in Leetcode: [SQL50](https://github.com/absognety/Competitive-Coding-Platforms/tree/master/LeetCode/SQL50)  
+Link to Leetcode: https://leetcode.com/studyplan/top-sql-50/  
