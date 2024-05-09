@@ -1,4 +1,5 @@
 # SQL questions - Leetcode (For Data Engineering)
+*All Solutions in PostgreSQL*
 ## Recyclable and low fat products
 Table: Products
 | Column Name  | Type |
