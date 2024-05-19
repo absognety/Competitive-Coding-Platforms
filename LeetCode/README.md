@@ -42,7 +42,7 @@ Input: students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]
 Output: 3  
 
 
-Solution: [NUEL.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/NUEL.py)  
+Solution: [NUEL.py](NUEL.py)  
 
 
 ### 2. Best Team with No Conflicts  
@@ -78,7 +78,7 @@ scores.length == ages.length
 1 <= scores[i] <= 106  
 1 <= ages[i] <= 1000  
 
-Solution: [BTNC.py](https://github.com/absognety/Competitive-Coding-Platforms/blob/master/LeetCode/BTNC.py)  
+Solution: [BTNC.py](BTNC.py)  
   
-## Solutions to Curated Top 50 SQL Questions in Leetcode: [SQL50](https://github.com/absognety/Competitive-Coding-Platforms/tree/master/LeetCode/SQL50)  
+## Solutions to Curated Top 50 SQL Questions in Leetcode: [SQL50](SQL50)  
 Link to Leetcode: https://leetcode.com/studyplan/top-sql-50/  
