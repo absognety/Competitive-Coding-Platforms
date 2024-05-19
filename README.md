@@ -24,4 +24,4 @@ Programming questions from different competitive coding platforms for Algorithms
 7. [Coderbyte](https://coderbyte.com/challenges)
 8. [Daily Coding Problem](https://www.dailycodingproblem.com/)
 
-## Leetcode Problems and Solutions: [Leetcode](Leetcode/)
+## Leetcode Problems and Solutions: [Leetcode](Leetcode)
