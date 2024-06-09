@@ -1,4 +1,4 @@
-# 50 SQL questions (SQL50 - https://leetcode.com/studyplan/top-sql-50/) - Leetcode (For Data Engineering)
+# 50 SQL questions (SQL50 - https://leetcode.com/studyplan/top-sql-50/) - Leetcode (For Data and Analytics Engineering)
 ## <ins>*All Solutions in PostgreSQL*</ins>  
 ## Recyclable and low fat products
 Table: Products
