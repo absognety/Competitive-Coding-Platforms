@@ -44,15 +44,14 @@ n == seats.length == students.length
 1 <= n <= 100
 1 <= seats[i], students[j] <= 100
 */
-package main
+package MinMovesToSeatEveryone
 
 import (
-	"fmt"
 	"sort"
 	"math"
 )
 
-func minMovesToSeat(seats []int, students []int) int {
+func MinMovesToSeat(seats []int, students []int) int {
 	// sort both arrays
 	sort.Ints(seats)
 	sort.Ints(students)
@@ -66,11 +65,4 @@ func minMovesToSeat(seats []int, students []int) int {
 		}
 	}
 	return moves
-}
-
-func main() {
-	// test the function
-	fmt.Println(minMovesToSeat([]int{3,1,5}, []int{2,7,4}))
-	fmt.Println(minMovesToSeat([]int{4,1,5,9}, []int{1,3,2,6}))
-	fmt.Println(minMovesToSeat([]int{2,2,6,6}, []int{1,3,2,6}))
 }
