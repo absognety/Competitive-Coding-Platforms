@@ -1,4 +1,5 @@
 // Leetcode 75
+// Greatest Common Divisor (Largest String that divides given 2 strings)
 
 package gcd
 
