@@ -1,3 +1,5 @@
+// Leetcode 75
+
 package gcd
 
 func gcd_util(a int, b int) int {

@@ -1,4 +1,9 @@
-/*There are n seats and n students in a room. You are given an array seats of length n, where seats[i] is the position of the ith seat. You are also given the array students of length n, where students[j] is the position of the jth student.
+/*
+Leetcode 75
+
+There are n seats and n students in a room. You are given an array seats of length n, 
+where seats[i] is the position of the ith seat. You are also given the array students of 
+length n, where students[j] is the position of the jth student.
 
 You may perform the following move any number of times:
 
