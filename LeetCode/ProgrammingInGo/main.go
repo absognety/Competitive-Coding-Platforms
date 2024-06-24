@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"ProgrammingInGo/MinMovesToSeatEveryone"
 	"ProgrammingInGo/MergeAlternately"
+	"ProgrammingInGo/gcd"
 )
 
 func main() {
@@ -17,4 +18,9 @@ func main() {
 	fmt.Println(MergeAlternately.MergeAlternate("abc", "pqr"))
 	fmt.Println(MergeAlternately.MergeAlternate("ab", "pqrs"))
 	fmt.Println(MergeAlternately.MergeAlternate("abcd", "pq"))
+
+	// test the function
+	fmt.Println(gcd.GCDofStrings("ABCABC", "ABC"))
+	fmt.Println(gcd.GCDofStrings("ABABAB", "ABAB"))
+	fmt.Println(gcd.GCDofStrings("LEET", "CODE"))
 }
