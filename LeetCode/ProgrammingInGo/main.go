@@ -26,6 +26,6 @@ func main() {
 	fmt.Println(gcd.GCDofStrings("LEET", "CODE"))
 
 	// test the function
-	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([2,3,5,1,3], 3))
-	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([4,2,1,1,2], 1))
+	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([]int{2,3,5,1,3}, 3))
+	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([]int{4,2,1,1,2}, 1))
 }
