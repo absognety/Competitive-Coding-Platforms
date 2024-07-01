@@ -5,6 +5,7 @@ import (
 	"ProgrammingInGo/MinMovesToSeatEveryone"
 	"ProgrammingInGo/MergeAlternately"
 	"ProgrammingInGo/gcd"
+	"ProgrammingInGo/KidsWithGreatestCandies"
 )
 
 func main() {
@@ -23,4 +24,8 @@ func main() {
 	fmt.Println(gcd.GCDofStrings("ABCABC", "ABC"))
 	fmt.Println(gcd.GCDofStrings("ABABAB", "ABAB"))
 	fmt.Println(gcd.GCDofStrings("LEET", "CODE"))
+
+	// test the function
+	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([2,3,5,1,3], 3))
+	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([4,2,1,1,2], 1))
 }
