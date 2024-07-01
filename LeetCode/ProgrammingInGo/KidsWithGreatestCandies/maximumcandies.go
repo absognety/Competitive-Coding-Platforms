@@ -36,6 +36,9 @@ n == candies.length
 1 <= extraCandies <= 50
 */
 // Solution
+
+package KidsWithGreatestCandies
+
 func findMax(array []int) int {
     var max_v int = array[0]
     for _, value := range array {
