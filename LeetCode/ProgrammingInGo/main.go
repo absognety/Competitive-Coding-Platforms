@@ -7,6 +7,7 @@ import (
 	"ProgrammingInGo/gcd"
 	"ProgrammingInGo/KidsWithGreatestCandies"
 	"ProgrammingInGo/ReverseWords"
+	"ProgrammingInGo/productofelements"
 )
 
 func main() {
@@ -34,4 +35,8 @@ func main() {
 	fmt.Println(ReverseWords.ReverseTokens("the sky is blue"))
 	fmt.Println(ReverseWords.ReverseTokens("  hello world  "))
 	fmt.Println(ReverseWords.ReverseTokens("a good   example"))
+
+	// test the function
+	fmt.Println(productofelements.ProductExceptSelf([]int{1,2,3,4}))
+	fmt.Println(productofelements.ProductExceptSelf([]int{-1, 1, 0, -3, 3}))
 }
