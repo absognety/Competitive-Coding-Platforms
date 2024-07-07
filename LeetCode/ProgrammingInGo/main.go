@@ -6,6 +6,7 @@ import (
 	"ProgrammingInGo/MergeAlternately"
 	"ProgrammingInGo/gcd"
 	"ProgrammingInGo/KidsWithGreatestCandies"
+	"ProgrammingInGo/ReverseWords"
 )
 
 func main() {
@@ -28,4 +29,9 @@ func main() {
 	// test the function
 	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([]int{2,3,5,1,3}, 3))
 	fmt.Println(KidsWithGreatestCandies.KidsWithCandies([]int{4,2,1,1,2}, 1))
+
+	// test the function
+	fmt.Println(ReverseWords.ReverseTokens("the sky is blue"))
+	fmt.Println(ReverseWords.ReverseTokens("  hello world  "))
+	fmt.Println(ReverseWords.ReverseTokens("a good   example"))
 }
