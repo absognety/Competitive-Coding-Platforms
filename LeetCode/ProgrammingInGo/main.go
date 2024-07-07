@@ -39,4 +39,6 @@ func main() {
 	// test the function
 	fmt.Println(productofelements.ProductExceptSelf([]int{1,2,3,4}))
 	fmt.Println(productofelements.ProductExceptSelf([]int{-1, 1, 0, -3, 3}))
+	fmt.Println(productofelements.ProductExceptSelf_Optimized([]int{1,2,3,4}))
+	fmt.Println(productofelements.ProductExceptSelf_Optimized([]int{-1, 1, 0, -3, 3}))
 }

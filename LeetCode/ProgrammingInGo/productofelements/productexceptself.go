@@ -46,3 +46,20 @@ func ProductExceptSelf(nums []int) []int {
     }
     return result
 }
+
+func ProductExceptSelf_Optimized(nums []int) []int {
+    n := len(nums)
+    products := make([]int, n)
+    for i := 0; i < n; i++ {
+        products[i] = 1
+    }
+    for i := 1; i < n; i++ {
+        products[i] = products[i-1] * nums[i-1]
+    }
+    right := nums[n-1]
+    for i := n-2; i > -1; i-- {
+        products[i] = products[i] * right
+        right = right * nums[i]
+    }
+    return products
+}
