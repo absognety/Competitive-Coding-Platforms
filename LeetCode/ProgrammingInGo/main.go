@@ -7,6 +7,7 @@ import (
 	"ProgrammingInGo/ReverseWords"
 	"ProgrammingInGo/gcd"
 	"ProgrammingInGo/productofelements"
+	"ProgrammingInGo/secondlargestelement"
 	"fmt"
 )
 
@@ -41,4 +42,8 @@ func main() {
 	fmt.Println(productofelements.ProductExceptSelf([]int{-1, 1, 0, -3, 3}))
 	fmt.Println(productofelements.ProductExceptSelf_Optimized([]int{1, 2, 3, 4}))
 	fmt.Println(productofelements.ProductExceptSelf_Optimized([]int{-1, 1, 0, -3, 3}))
+
+	// test the function
+	fmt.Println(secondlargestelement.FindSecondLargestElement([]int{3, 2, 1, 5, 6, 4}))
+	fmt.Println(secondlargestelement.FindSecondLargestElement([]int{5, 7, 8, 8, 6, 4, 7}))
 }
