@@ -7,6 +7,7 @@ import (
 	"ProgrammingInGo/ReverseWords"
 	"ProgrammingInGo/gcd"
 	"ProgrammingInGo/productofelements"
+	"ProgrammingInGo/removeduplicates"
 	"ProgrammingInGo/secondlargestelement"
 	"fmt"
 )
@@ -46,4 +47,11 @@ func main() {
 	// test the function
 	fmt.Println(secondlargestelement.FindSecondLargestElement([]int{3, 2, 1, 5, 6, 4}))
 	fmt.Println(secondlargestelement.FindSecondLargestElement([]int{5, 7, 8, 8, 6, 4, 7}))
+
+	// test the function
+	arr := []int{1, 1, 2, 3, 3, 4}
+	var k int = removeduplicates.RemoveDuplicates(arr)
+	fmt.Printf("The array now is: %v\n", arr)
+	fmt.Printf("The number of unique elements is: %d\n", k)
+	fmt.Printf("Array of unique elements is: %v\n", arr[:k])
 }
