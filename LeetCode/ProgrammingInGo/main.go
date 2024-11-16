@@ -5,6 +5,7 @@ import (
 	"ProgrammingInGo/MergeAlternately"
 	"ProgrammingInGo/MinMovesToSeatEveryone"
 	"ProgrammingInGo/ReverseWords"
+	"ProgrammingInGo/canplaceflowers"
 	"ProgrammingInGo/dataengineering/removeduplicates"
 	"ProgrammingInGo/dataengineering/secondlargestelement"
 	"ProgrammingInGo/gcd"
@@ -54,4 +55,8 @@ func main() {
 	fmt.Printf("The array now is: %v\n", arr)
 	fmt.Printf("The number of unique elements is: %d\n", k)
 	fmt.Printf("Array of unique elements is: %v\n", arr[:k])
+
+	// test the function
+	fmt.Println(canplaceflowers.CanPlaceFlowers([]int{1, 0, 0, 0, 1}, 1))
+	fmt.Println(canplaceflowers.CanPlaceFlowers([]int{1, 0, 0, 0, 1}, 2))
 }
