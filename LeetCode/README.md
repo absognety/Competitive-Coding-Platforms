@@ -82,3 +82,6 @@ Solution: [BTNC.py](BTNC.py)
   
 ## Solutions to Curated Top 50 SQL Questions in Leetcode: [SQL50](SQL50)  
 Link to Leetcode: https://leetcode.com/studyplan/top-sql-50/  
+
+## Solutions to Curated 75 Coding Questions in Leetcode: [LeetCode75](ProgrammingInGo)  
+Link to Leetcode: https://leetcode.com/studyplan/leetcode-75/  
