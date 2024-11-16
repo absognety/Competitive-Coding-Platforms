@@ -5,10 +5,10 @@ import (
 	"ProgrammingInGo/MergeAlternately"
 	"ProgrammingInGo/MinMovesToSeatEveryone"
 	"ProgrammingInGo/ReverseWords"
+	"ProgrammingInGo/dataengineering/removeduplicates"
+	"ProgrammingInGo/dataengineering/secondlargestelement"
 	"ProgrammingInGo/gcd"
 	"ProgrammingInGo/productofelements"
-	"ProgrammingInGo/removeduplicates"
-	"ProgrammingInGo/secondlargestelement"
 	"fmt"
 )
 
