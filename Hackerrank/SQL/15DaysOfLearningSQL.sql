@@ -5,6 +5,7 @@ https://www.hackerrank.com/challenges/15-days-of-learning-sql/problem
 */
 
 WITH RecursiveActiveHackers(S_DATE, H_ID) AS (
+    /* Base case - Include all hackers on the first day */
     (
         SELECT 
             h1.submission_date AS S_DATE,
@@ -15,6 +16,7 @@ WITH RecursiveActiveHackers(S_DATE, H_ID) AS (
               FROM Submissions))
     )
     UNION ALL
+    /* Recursive case - Retain hackers who are active on all previous days */
     (
         SELECT 
             h1.submission_date AS S_DATE,
