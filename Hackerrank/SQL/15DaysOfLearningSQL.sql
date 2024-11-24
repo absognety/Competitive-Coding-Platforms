@@ -2,6 +2,8 @@
 
 https://www.hackerrank.com/challenges/15-days-of-learning-sql/problem
 
+Solution: Oracle SQL Code
+
 */
 
 WITH RecursiveActiveHackers(S_DATE, H_ID) AS (
