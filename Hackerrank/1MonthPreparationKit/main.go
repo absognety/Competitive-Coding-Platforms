@@ -1,3 +1,14 @@
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "io"
+    "os"
+    "strconv"
+    "strings"
+)
+
 func main() {
     reader := bufio.NewReaderSize(os.Stdin, 16 * 1024 * 1024)
 
