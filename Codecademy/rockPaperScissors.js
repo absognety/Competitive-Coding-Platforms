@@ -16,7 +16,8 @@ function playGameRPS(userChoice, compChoice) {
       console.log('Winner is User');
       break;
     case (userChoice === 'rock' && compChoice === 'paper'):
-      console.log('Winner is Computer');break;
+      console.log('Winner is Computer');
+      break;
     case (userChoice === 'paper' && compChoice === 'rock'):
       console.log('Winner is User');
       break;
