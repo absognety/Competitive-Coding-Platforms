@@ -2,25 +2,18 @@ let getSleepHours = (day) => {
   switch (day) {
     case "Monday":
       return 4.9;
-      break;
     case "Tuesday":
       return 4.35;
-      break;
     case "Wednesday":
       return 4.27;
-      break;
     case "Thursday":
       return 5.2;
-      break;
     case "Friday":
       return 4.76;
-      break;
     case "Saturday":
       return 3.5;
-      break;
     case "Sunday":
       return 6.5;
-      break;
   }
 };
 
