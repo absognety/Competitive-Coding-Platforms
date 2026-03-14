@@ -45,8 +45,6 @@ console.log(getIdealSleepHours());
 let calculateSleepDebt = () => {
   let actualSleepHours = getActualSleepHours();
   let idealSleepHours = getIdealSleepHours();
-  console.log(actualSleepHours);
-  console.log(idealSleepHours);
   if (actualSleepHours === idealSleepHours) {
     return "User got the perfect amount of sleep";
   } else if (actualSleepHours > idealSleepHours) {
@@ -61,8 +59,6 @@ let calculateSleepDebt = () => {
       (idealSleepHours -
       actualSleepHours)
     );
-  } else {
-    return 'Nothing';
   }
 };
 
